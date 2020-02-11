@@ -1,0 +1,12 @@
+body,head{
+    background-color:floralwhite ;
+}
+
+h1,p
+{
+    text-align: center;
+    font-size: 50px;
+}
+h1{
+    color: red;
+}

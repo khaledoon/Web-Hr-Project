@@ -1,0 +1,41 @@
+
+body {
+     /*blue color*/
+   box-sizing: border-box;
+    margin: 0;
+    height: 100%;
+/*    overflow: hidden;*/
+}
+
+
+/*
+.letter{
+
+all: unset;
+white-space: pre-wrap;
+margin-top: 170px;
+
+}
+*/
+
+.letterContent{
+	position:absolute;
+	margin-top:10%;
+}
+
+.submit{
+	position: absolute;
+	margin-top: 1%;
+	margin-left: 103%;
+}
+
+.letter {
+	all: unset;
+	white-space:pre-wrap;
+	scrollbar-width:none;
+    resize: vertical;
+    height:330px;
+	margin-left: 2px;
+    color:darkblue;
+    background-color: lightgray;
+}

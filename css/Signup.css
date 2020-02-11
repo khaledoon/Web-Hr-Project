@@ -1,0 +1,103 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  background: #34495e;
+}
+.wrapper {
+    width:100%;
+    height:99%;
+    background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #FF3706); /*setting the background to be linear with 45  degree angle*/
+    background-size: 600% 100%; /*//strech the background*/
+
+    animation: gradient 8s linear infinite; /* the animation called gradient works for 8 seconds in an infinite loop*/
+    animation-direction: alternate; /* direction of the movement is set as alternate so that when it reaches the end it would turn back*/
+}
+@keyframes gradient { /*   */
+    0% {background-position: 0%}
+    100% {background-position: 100%}
+}
+.box{
+    width: 300px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center; 
+    background: #34495e;
+}
+
+.box h1{
+  color: white;
+  text-align: center;
+  padding: 10px 5px;
+  font-weight: 500;
+}
+
+#Select{
+    border: 2px solid #FF1493;
+    border-radius: 30px;
+    color: #ff3e6d;
+    background-color:34495e;
+    text-align:center;
+    
+}
+
+#Empval{
+     border: 2px solid #FF1493;
+    border-radius: 30px;
+    color: #ff3e6d;
+    background-color:34495e;
+    text-align:center;
+    
+}
+
+#Select1{
+    display:none;
+    border: 2px solid #FF1493;
+    border-radius: 30px;
+    color: #ff3e6d;
+    background-color:34495e;
+    text-align:center;
+    margin-left: 85px;
+    margin-top: 10px;
+}
+
+.box input[type = "text"],.box input[type = "password"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #800080;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: #ff3e6d;
+  border-radius: 30px;
+  transition: 0.25s;
+}
+
+.box input[type = "text"]:focus,.box input[type = "password"]:focus{
+  width: 280px;
+  border-color: #FF1493;
+}
+
+.box input[type = "submit"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #FF1493;
+  padding: 14px 40px;
+  outline: none;
+  color: White;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.box input[type = "submit"]:hover{
+  background: #2ecc71;
+}

@@ -1,0 +1,45 @@
+body {
+     /*blue color*/
+   box-sizing: border-box;
+    margin: 0;
+    height: 100%;
+/*    overflow: hidden;*/
+}
+
+#head-title{
+   text-align: center;
+   text-shadow: 1px 1px 2px blue;
+  color: Black;
+ font-size: 30px;
+ margin-top: 20px;
+}
+
+.MiddleDiv{
+
+     background-color: #DCDCDC;
+     position: absolute;
+     margin-top: 129px;
+    width: 100%;
+    height: 599px;
+    padding-left: 40px;
+	color:darkblue;
+    font-size: 20px;
+}
+
+.MiddleDiv select,input{
+	color:darkblue;
+	border-radius:4px;
+}
+
+#choose-span{
+  font-weight: bold;
+  font-family: "Georgia" , "serif";
+}
+
+#form-div{
+  padding: 20px;
+}
+
+#letter_Priority,#letter_directed_to,#check-style{
+  margin-top: 10px;
+}

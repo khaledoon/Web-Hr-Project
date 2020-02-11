@@ -1,0 +1,227 @@
+body {
+
+   box-sizing: border-box;
+    margin: 0;
+    height: 100%;
+}
+
+.parentdiv{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    
+}
+
+#AllEmps,#TablesDiv{
+	display:none;
+}
+
+
+.first-coloumn{
+    margin-top: 10px;
+	margin-left:1%;
+    position: absolute;
+    display: block;
+    height:auto;
+	color:azure;
+    width: auto;
+    float:left;
+    text-align: left;
+}
+
+.second-coloumn{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 39%;
+    display: block;
+    height:auto;
+    width: auto;
+    float:left;
+    text-align:left;
+		
+}
+.MiddleDiv{
+    background-color: lightskyblue;
+    border: none;
+    height: 596.95px;
+    right: 0.016666667px;
+    left: 0px;
+    width: 1293.23px;
+    margin-left: 242.75px;
+    color: white;
+    margin-top: 130.717px;
+    float: left;
+    position: absolute;
+    
+    overflow-x: hidden;
+	overflow-y: auto;
+	scrollbar-width:none;
+    border-style: solid;
+   border-width: 4px;
+   border-color: black; 
+
+}
+.LeftDiv{
+   background-color: lightblue;  /*Grey Color*/
+   height:596.95px;
+   top:0px;
+   width: 243.75px;
+   padding-left: 45px;
+   padding-top: 20px;
+   border-style: solid;
+   border-width: 4px;
+  
+   margin-top: 130.717px;
+   right: 1290.2px;
+   left: 0px;
+   bottom: 0.3333333px;
+
+   border-color: black;
+   overflow: hidden;
+  position: absolute;
+  
+
+}
+
+
+
+#register-requests-tile, #all-emps-tile,#payroll-tile {
+  height: 150px;
+  width: 80%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+    border-radius: 18px;
+}
+
+
+
+#register-requests-tile:hover, #all-emps-tile:hover,#payroll-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+
+
+
+#register-requests-tile{
+    background: url('../images/contactcol.png') no-repeat;
+  background-position: center;
+  background-size: contain; 
+}
+
+#all-emps-tile{
+    background: url('../images/employeecol.png') no-repeat;
+  background-position: center;
+  background-size: contain; 
+}
+
+#payroll-tile{
+    background: url('../images/dollar2.png') no-repeat;
+  background-position: center;
+  background-size: contain; 
+}
+
+#register-requests-tile span, #all-emps-tile span,#payroll-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+
+
+
+
+
+
+h3{
+    margin-left: 50%;
+    color: black;
+    
+}
+
+
+
+th{
+    color:darkblue;
+	text-align:center;
+	font-family  : Arial, Helvetica, sans-serif;
+
+	width: 50px;
+	background-color: darkslateblue;
+    color:azure;
+}
+
+td{
+	text-align: center;
+	color: black;
+	font-family  : Arial, Helvetica, sans-serif;
+
+}
+
+
+#MC{
+background-color: cornflowerblue;
+    color: azure;
+	height: 70%;
+	font-family  : Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+#myModal{
+top: 8%;
+width: 55%;
+height:100%;
+left: 25%;
+}
+
+#MC label,input{
+	color:azure;
+}
+#MC input[type='submit']
+{
+	background-color: white;
+	color:darkslateblue;
+}
+
+#MC2{
+	width: 35%;
+    position: absolute;
+    margin-left: 32%;
+    margin-top: 9%;
+    height: 20%;
+	background-color: cornflowerblue;
+color: azure;
+font-family: Coronetscript, cursive;
+font-size: 15px;
+}
+
+#MC3{
+width: 35%;
+height: 43%;
+position: absolute;
+margin-left: 33%;
+margin-top: 8%;
+background-color: cornflowerblue;
+color: azure;
+font-family: Coronetscript, cursive;
+font-size: 15px;
+}
+#MC3 input[type='text'],input[type='number']
+{
+	color:darkslateblue;
+}
+input[type='submit']{
+    border-radius: 4px;
+	color:darkslateblue;
+}
+
+
+
+
+

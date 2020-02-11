@@ -1,0 +1,276 @@
+body {
+     /*blue color*/
+   box-sizing: border-box;
+    margin: 0;
+    height: 100%;
+/*    overflow: hidden;*/
+
+
+
+}
+
+
+
+.parentdiv{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.MiddleDiv{
+    background-color:lightskyblue;
+    border: none;
+    height: 596.95px;
+    right: 0.016666667px;
+    left: 0px;
+    width: 1293.23px;
+    margin-left: 242.75px;
+    color: white;
+    margin-top: 130.717px;
+    float: left;
+    position: absolute;
+    scrollbar-width:none;
+     overflow-y: auto;
+	overflow-x:hidden;
+    border-style: solid;
+   border-width: 4px;
+   border-color: black; 
+
+}
+
+
+
+
+.TopNavi
+{
+    position:absolute;
+    display: block;
+    width: 100%;
+    height:50px;
+    margin-top: -24px;
+    border:none;
+    background-color: rgba(1,1,1,0.75);
+}
+.button:hover{
+    color:white;
+}
+
+
+.button{
+   border: none;
+    color: gray;
+    background-color: transparent; 
+    font-size: 21px;
+    padding: 6px 0px;
+    text-align: center;
+    margin: -7px 6px;
+    display: inline-block;
+    font-family: sans-serif;
+}
+
+
+
+
+/*end of header of main page*/
+
+/*begining of middle divison*/
+
+
+
+.Sections{
+    background-color:lightskyblue;
+      border:none;
+     		font-family: Coronetscript, cursive;
+
+
+    color: azure;
+    height: 90%;
+    width:100%;
+    position:absolute;
+   
+    margin-top: 26px;
+}
+
+#Profile-section{
+    display:block;
+}
+
+#Payroll-section,#PayrollHistory-section{
+    display:none;
+}
+
+#firstsec,#payrollsec{
+    background-color:cornflowerblue;
+    border-style: solid;
+    border-color: black;
+    display: block;
+    margin-top: 50px;
+    margin-left:50px;
+    margin-right:200px;
+    margin bottom:50px;
+    height:300px;
+    width:45%;
+    
+    
+}
+
+#firstsec label,#payrollsec label{
+    margin-top:2%;
+    margin-left:3%;
+}
+
+#secondsec{
+    background-color:cornflowerblue;
+    border-style: solid;
+    border-color: black;
+    display: block;
+    margin-top: -300px;
+    margin-left:665px;
+    margin-right:200px;
+    height:300px;
+    width:45%;
+}
+
+#secondsec label{
+    margin-top:2%;
+    margin-left:3%;
+}
+
+.glyphicon{
+  color: black;
+  height: 20px;
+}
+
+#profile-glyph, #payroll-glyph, #payroll-history-glyph{
+  margin-top: 10px;
+  height: 20px;
+  margin-left: 20px;
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  float: left;
+}
+
+#profile-glyph a, #payroll-glyph a, #payroll-history-glyph a{
+     color: black;
+     height: 50px;
+     font-size: 20px;
+  }
+  
+
+
+
+
+.LeftDiv{
+   background-color: lightblue; 
+   height:596.95px;
+   top:0px;
+   width: 243.75px;
+   padding-left: 45px;
+   padding-top: 20px;
+   border-style: solid;
+   border-width: 4px;
+  
+   margin-top: 130.717px;
+   right: 1290.2px;
+   left: 0px;
+   bottom: 0.3333333px;
+
+   border-color: black;
+   overflow: hidden;
+  position: absolute;
+  
+
+}
+
+#employees-files-tile, #hr-letters-tile, #help-page-tile {
+  height: 150px;
+  width: 80%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+ border-radius: 25px;
+}
+
+#employees-files-tile:hover, #hr-letters-tile:hover, #help-page-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+#employees-files-tile {
+  background: url('../images/efiles.png') no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+#hr-letters-tile{
+    background: url('../images/hrletter.png') no-repeat;
+  background-position: center;
+  background-size: contain; 
+}
+
+#help-page-tile{
+    background: url('../images/help3.png') no-repeat;
+  background-position: center;
+  background-size: contain; 
+}
+
+#employees-files-tile span, #hr-letters-tile span, #help-page-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+font-size: 14px;
+   	font-family: lucidatypewriter,monospace;
+
+    text-transform: uppercase;
+    background-color: #000;
+    color: cyan;
+    opacity:0.8;
+}
+
+table, th, td {
+  border: 1px solid black;
+
+}
+
+th{
+	text-align:center;
+	font-family: Coronetscript, cursive;
+	width: 50px;
+	background-color: darkslateblue;
+    color: white;
+}
+
+td{
+	text-align: center;
+	color: black;
+	font-family: Coronetscript, cursive;
+}
+
+#historysec{
+    background-color:aqua;
+    border-style: solid;
+    border-color: black;
+    display: block;
+    margin-top: 50px;
+    margin-left:50px;
+    margin-right:200px;
+    margin-bottom:50px;
+    height:300px;
+    width:45%;
+}
+#historysec label
+{
+    margin-top:2%;
+    margin-left:3%;
+}
+#payrollHistory
+{
+    display:block;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: absolute;
+    width:100.7%;
+}

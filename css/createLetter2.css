@@ -1,0 +1,32 @@
+
+body {
+     /*blue color*/
+   box-sizing: border-box;
+    margin: 0;
+    height: 100%;
+/*    overflow: hidden;*/
+}
+
+.letter{
+
+all: unset;
+white-space: pre-wrap;
+resize: vertical;
+margin-left: 2px;
+height:330px;
+scrollbar-width:none;
+color:azure;
+background-color: cornflowerblue;
+
+}
+.letterContent{
+	position:absolute;
+	margin-top:10%;
+}
+
+.submit{
+	position: absolute;
+	margin-top: 1%;
+	margin-left: 103%;
+    border-radius: 6px;
+}

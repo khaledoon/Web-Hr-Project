@@ -1,0 +1,239 @@
+
+
+
+body {
+     /*blue color*/
+   box-sizing: border-box;
+    margin: 0;
+    height: 100%;
+/*    overflow: hidden;*/
+
+
+
+}
+table, th, td {
+  border: 1px solid black;
+
+}
+
+th{
+	text-align:center;
+	
+	font-family  : Arial, Helvetica, sans-serif;
+	width: 50px;
+	background-color: cornflowerblue;
+  color: darkblue;
+}
+
+td{
+	text-align: center;
+	color: black;
+	font-family  : Arial, Helvetica, sans-serif;
+}
+
+.ParentDiv{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+
+.MiddleDiv{
+    background-color: lightskyblue;
+    border: none;
+    height: 596.95px;
+    right: 0.016666667px;
+    left: 0px;
+    width: 1293.23px;
+    margin-left: 242.75px;
+    color: white;
+    margin-top: 130.717px;
+    float: left;
+    position: absolute;
+    
+    overflow-x: hidden;
+	overflow-y: auto;
+	scrollbar-width:none;
+    border-style: solid;
+   border-width: 4px;
+   border-color: black; 
+
+}
+
+
+
+#TablesDiv{
+    padding-left: 10px;
+    padding-right: 10px;
+    display:block;
+    position: absolute;
+    width:97%;
+    
+}
+
+#ApprovedDiv,#DeniedDiv
+{
+    padding-left: 10px;
+    padding-right: 10px;
+    display:none;
+    position: absolute;
+    width:97%;
+    
+}
+
+.LeftDiv{
+   background-color: lightblue;  /*Grey Color*/
+   height:596.95px;
+   top:0px;
+   width: 243.75px;
+   padding-left: 45px;
+   padding-top: 20px;
+   border-style: solid;
+   border-width: 4px;
+  
+   margin-top: 130.717px;
+   right: 1290.2px;
+   left: 0px;
+   bottom: 0.3333333px;
+
+   border-color: black;
+   overflow: hidden;
+  position: absolute;
+  
+
+}
+
+#New_Letter{
+    width: 200px;
+    margin-top: 730px;
+    margin-left: 75%;
+    
+}
+#Approve_Letter{
+    margin-left:20%;
+}
+#Deny_Letter{
+    margin-left:20%;
+}
+#pending:hover{
+    text-decoration: underline;
+}
+#approval:hover{
+    text-decoration: underline;
+}
+#accepted:hover{
+    text-decoration: underline;
+}
+h3{
+    margin-left: 50%;
+    color: black;
+    
+}
+#pending{
+   background: url('../images/pending_2.png') no-repeat;
+  background-position: center;
+  background-size: contain;
+    height: 120px;
+  width: 80%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+          border-radius: 25px;
+
+}
+#approved{
+    background: url('../images/accepted.png') no-repeat;
+  background-position: center;
+  background-size: contain;
+    height: 120px;
+  width: 80%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3F0C1F;
+          border-radius: 25px;
+
+  overflow: hidden;
+}
+#denied{
+   background: url('../images/rejected_2.png') no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 120px;
+  width: 80%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3F0C1F;
+          border-radius: 25px;
+
+  overflow: hidden;
+}
+
+#pending span, #approved span, #denied span{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+ font-size: 13px;
+font-family: lucidatypewriter,monospace;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #17a2b8;
+    opacity:0.8;
+    
+}
+#pending:hover, #approved:hover, #denied:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#New_Letter{
+    width: 200px;
+margin-top: 43%;
+margin-left: 80%;
+}
+
+
+#MC{
+background-color: cornflowerblue;
+    color: azure;
+   font-family: Coronetscript, cursive;
+    font-size: 15px;
+}
+#MC2{
+background-color: cornflowerblue;
+    color: azure;
+font-family: Coronetscript, cursive;
+	font-size: 15px;
+}
+#Select2,Select{
+    border-radius: 6px;
+    color:darkslateblue;
+}
+
+#check-style{
+    color: blue;
+    border-radius: 3px;
+}
+#comment{
+    color: darkslateblue;
+}
+
+#submit{
+    border-radius: 4px;
+}
+#MC input [type='submit']{
+    border-radius: 4px;
+	color:darkslateblue;
+}
+
+#MC2 input{
+	color:darkslateblue;
+}
+/*
+.modal-body{
+    background-color: cornflowerblue;
+}
+.modal-header{
+    background-color: cornflowerblue;
+}*/

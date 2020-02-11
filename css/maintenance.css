@@ -1,0 +1,9 @@
+body,head{
+    background-color: darkgray;
+}
+
+h1,p
+{
+    text-align: center;
+    font-size: 50px;
+}

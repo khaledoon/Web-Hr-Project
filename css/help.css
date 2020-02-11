@@ -1,0 +1,193 @@
+body {
+     /*blue color*/
+   box-sizing: border-box;
+    margin: 0;
+    height: 100%;
+/*    overflow: hidden;*/
+
+}
+
+.parentdiv{
+    position: absolute;
+    height: 100%;
+    width:100%;
+}
+
+/*Header of the main page*/
+
+
+
+
+/*end of header of main page*/
+
+
+#FAQQ{
+  display:none;
+    position: absolute;
+}
+
+#poll{
+  display:block;
+    position:absolute;
+}
+
+
+/*begining of middle divison*/
+.MiddleDiv{
+    background-color: #DCDCDC;
+    border: none;
+    height: 596.95px;
+    right: 0.016666667px;
+    left: 0px;
+    width: 1293.23px;
+    margin-left: 242.75px;
+    color: white;
+    margin-top: 130.717px;
+    float: left;
+    position: absolute;
+    
+    overflow-x: hidden;
+	overflow-y: auto;
+	scrollbar-width:none;
+    border-style: solid;
+   border-width: 4px;
+   border-color: black; 
+
+}
+.LeftDiv{
+   background-color: #9f9fc5;
+   height:596.95px;
+   top:0px;
+   width: 243.75px;
+   padding-left: 45px;
+   padding-top: 20px;
+   border-style: solid;
+   border-width: 4px;
+  
+   margin-top: 130.717px;
+   right: 1290.2px;
+   left: 0px;
+   bottom: 0.3333333px;
+
+   border-color: black;
+   overflow: hidden;
+  position: absolute;
+  
+
+}
+
+
+.glyphicon{
+  color: black;
+  height: 20px;
+}
+
+
+
+
+#FAQ-tile, #Policy-tile {
+  height: 150px;
+  width: 80%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+font-family: Coronetscript, cursive;
+}
+
+#FAQ-tile:hover,  #Policy-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+#FAQ-tile {
+  background: url('../images/help.png') no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+
+#Policy-tile{
+
+  background: url('../images/policy.png') no-repeat;
+  background-position: center;
+  background-size: contain;
+
+}
+
+#FAQ-tile span,  #Policy-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+
+#policyparagrph{
+  color:darkblue;
+  font-family: Coronetscript, cursive;
+  font-style: italic;
+  font-weight: bold;
+  margin-left:15px;
+  text-indent:20px
+}
+
+
+#policyhead{
+font-family: Coronetscript, cursive;
+  color:#051e3e ;
+  text-align: center;
+  font-weight: bold;
+
+}
+
+/* #poll{
+  display: none;
+} */
+
+/* #policyparagrph{
+  display: block;
+} */
+
+
+
+
+
+
+#FAQHEAD{
+  font-family: Coronetscript, cursive;
+  color:darkblue;
+  text-align: center;
+  font-weight: bold;
+}
+
+#FAQText{
+  color:darkblue;
+ font-family: Coronetscript, cursive;
+
+/*    scroll-behavior: smooth;*/
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-left:15px;
+  text-indent:20px;
+}
+
+#search{
+	margin-left: 2%;
+}
+
+#result{
+    color:darkblue;
+ font-family: Coronetscript, cursive;
+
+/*    scroll-behavior: smooth;*/
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-left:15px;
+  text-indent:20px;
+}

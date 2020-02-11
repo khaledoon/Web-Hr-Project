@@ -1,0 +1,175 @@
+ body {
+
+   box-sizing: border-box;
+    margin: 0;
+    height: 100%;
+}
+
+.parentdiv{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.MiddleDiv{
+    background-color: lightgrey;
+    border: none;
+    height: 596.95px;
+    right: 0.016666667px;
+    left: 0px;
+    width: 1293.23px;
+    margin-left: 242.75px;
+    color: white;
+    margin-top: 130.717px;
+    float: left;
+    position: absolute;
+    
+    overflow-y: auto;
+	overflow-x: hidden;
+	scrollbar-width:none;
+    border-style: solid;
+   border-width: 4px;
+   border-color: black; 
+
+}
+
+.LeftDiv{
+   background-color: #9f9fc5;  /*Grey Color*/
+   height:596.95px;
+   top:0px;
+   width: 243.75px;
+   padding-left: 45px;
+   padding-top: 20px;
+   border-style: solid;
+   border-width: 4px;
+  
+   margin-top: 130.717px;
+   right: 1290.2px;
+   left: 0px;
+   bottom: 0.3333333px;
+
+   border-color: black;
+   overflow: hidden;
+  position: absolute;
+  
+
+}
+
+#ApprovedDiv,#DeniedDiv{
+    display:none;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: absolute;
+    width:97%;
+}
+#TablesDiv{
+    padding-left: 10px;
+    padding-right: 10px;
+    position: absolute;
+    width:97%;
+    
+}
+#pending{
+background: url('../images/pending_3.png') no-repeat;
+  background-position: center;
+  background-size: contain;
+    
+    height: 120px;
+  width: 80%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+}
+#approved{
+    background: url('../images/accepted_1.png') no-repeat;
+  background-position: center;
+  background-size: contain;
+
+    height: 120px;
+  width: 80%;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+}
+#denied{
+        background: url('../images/rejected_1.png') no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  height: 120px;
+  width: 80%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+}
+
+#pending span, #approved span, #denied span{
+  position: absolute;
+  bottom: 0;
+    font-family: Coronetscript, cursive;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+#pending:hover, #approved:hover, #denied:hover{
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+h3{
+    margin-left: 50%;
+    color: black;
+    
+}
+
+
+
+th{
+    color:darkblue;
+	text-align:center;
+	    font-family: Coronetscript, cursive;
+
+	width: 50px;
+	background-color: darkslateblue;
+    color:azure;
+}
+
+td{
+	text-align: center;
+	color: black;
+	    font-family: Coronetscript, cursive;
+
+}
+
+
+#MC{
+background-color: lightgrey;
+    color: darkblue;
+    	    font-family: Coronetscript, cursive;
+
+
+    font-size: 15px;
+}
+#Select2,Select{
+    border-radius: 6px;
+    color:darkblue;
+}
+
+#check-style{
+    color: blue;
+    border-radius: 3px;
+}
+#comment{
+    color: darkblue;
+}
+
+#submit{
+    border-radius: 4px;
+}
