@@ -106,7 +106,7 @@ onclick="document.write('<//?php session_unset();
 
 			<div id="HRLetter">
 				<a id="hr" href="HRLetter.php">
-					<div id="hr-letters-tile"><span>Hr Letters</span></div>
+					<div id="hr-letters-tile"><span>Hr Letters didididiid</span></div>
 				</a>
 			</div>
 
