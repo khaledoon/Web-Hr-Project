@@ -92,7 +92,7 @@
 
     <div class="HeaderDiv">
         <a href="MainPage.php">
-            <h1 id="word"> HR System</h1>
+            <h1 id="word"> HR Systemafsdfasffasdfadsfsadfasdfsdfafsadsaf</h1>
         </a>
         <div id="timestamp"></div>
         <button type="button" class="btn btn-secondary" id="Theme">Alternate Theme</button>
