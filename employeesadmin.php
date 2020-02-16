@@ -297,8 +297,6 @@ include_once"Exception_file.php";
                             $GLOBALS['RequestID']=$row['RequestID'];
 
 						}
-
-//						echo "</table>";
 						} else { echo "<tr><td colspan=4>No registers found</td>";}
 
 				?>
