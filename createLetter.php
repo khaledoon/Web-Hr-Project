@@ -1,7 +1,7 @@
 <html>
 
 <head>
-<title>Request Letter</title>
+<title>Request Letter testing</title>
 <link rel="stylesheet" id="theme" href="css/reqLetter.css">
 <script src="js/jquery-2.1.4.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
