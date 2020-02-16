@@ -26,14 +26,14 @@
 			
 			
 		}
-		
+		// preg math used in validation
         if(isset($_POST['submit'])){
             if (!filter_var($_POST['username'], FILTER_VALIDATE_INT) === false||preg_match('/[\'\/~`\!@#\$%\^&\*\(\)\-\+=\{\}\[\]\|;:"\<\>,\.\?\\\]/', $_POST['username'])) {
-                echo('<script>alert("Please Enter valid username in the username field")</script>');
+                echo('<script>alert("Please Enter valid username in the username field area")</script>');
     
 }
          else if (preg_match('/;/', $_POST['password'])) {
-                echo('<script>alert("Please Enter Valid password in the password field")</script>');
+                echo('<script>alert("Please Enter Valid password in the password field area")</script>');
     
 }
             
@@ -62,13 +62,13 @@
             else
             {
                 echo '<script>
-                        alert("Invalid Username or Password")
+                        alert("Invalid Username or Password Please recheck")
                         </script>';
             }
         }
         }
         ?>
-		<!--form to enter the username and password-->
+		<!--form to enter the username and password asdkhbadkjfbasjkdbvjsdkjcnasjdbcjabdkjbjksdcjs dkjcbhwejfbjkadsbcjkansc sjdkvbhjvbjksbcjkasbncjksdbvjk-->
         <div class="wrapper">
       <form class="box" action = "" method ="post">
         <h1>login</h1>
