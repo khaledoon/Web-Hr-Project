@@ -16,7 +16,7 @@
 <script>
 function myFunction(y) {
 	/* array made to switch between tiles displays as policy in the beginning of the page then switch as needed */
-var idarr=["poll","FAQQ"]
+var idarr=["poll","FAQQ","Test1","Test2","Test3"]
 
 
 
