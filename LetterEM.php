@@ -170,14 +170,14 @@ try{
 
 //insert into letters with type pending the data coming from form in the reqletter page
 		if($_SESSION['mobile']=='')
-		{echo"<div class='alert alert-danger animated fadeOut delay-3s'>
-                                            <strong>Fill your data first in employee files tab or await approval on edit from HR</strong>
+		{echo"<div class='alert alert-danger animated fadeOut delay-2s'>
+                                            <strong>Fill your data first in employee files tab or await approval on edit from HR Manager</strong>
                                             </div>";}
-		else if ($_SESSION['natID']==''){echo"<div class='alert alert-danger animated fadeOut delay-3s'>
+		else if ($_SESSION['natID']==''){echo"<div class='alert alert-danger animated fadeOut delay-2s'>
                                             <strong>Fill your data first in employee files tab or await approval on edit from HR</strong>
                                             </div>";}
 		else if ($_SESSION['marStat']=='')
-		{echo"<div class='alert alert-danger animated fadeOut delay-3s'>
+		{echo"<div class='alert alert-danger animated fadeOut delay-2s'>
                                             <strong>Fill your data first in employee files tab or await approval on edit from HR</strong>
                                             </div>";}
 		else{
