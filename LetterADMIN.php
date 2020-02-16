@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>HR Letter</title>
+    <title>HR zeft Letter 3la dma3'ko</title>
     <link rel="stylesheet" id="theme" href="css/LetterADMIN.css">
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -343,11 +343,6 @@ include "Header.php";
 
                 </table>
             </div>
-<!--
-            <div class="buttons">
-                <button type="button" class="btn btn-primary" id="New_Letter">Create Letter Form</button>
-            </div>
--->
         </div>
     </div>
 

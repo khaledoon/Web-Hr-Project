@@ -95,9 +95,9 @@
             <h1 id="word"> HR System </h1>
         </a>
         <div id="timestamp"></div>
-        <button type="button" class="btn btn-secondary" id="Theme">Alternate Theme</button>
-        <button type="button" class="btn btn-primary" id="OriginalTheme">Original Theme</button>
-        <a href="SignOut.php"><button type="button" class="btn btn-danger" id="SignOut_btn">Sign Out</button></a>
+        <button type="button" class="btn btn-secondary" id="Theme">Tany Theme</button>
+        <button type="button" class="btn btn-primary" id="OriginalTheme">Awl Theme</button>
+        <a href="SignOut.php"><button type="button" class="btn btn-danger" id="SignOut_btn">Etla3 Bara!!</button></a>
 
         <script>
 			
