@@ -402,7 +402,7 @@
                             Name
                         </th>
                         <th>
-                            Departement
+                            Departement el sh7t m7t 5od fo2 wa t7t
                         </th>
                         <th>
 
