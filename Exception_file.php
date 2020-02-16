@@ -15,7 +15,7 @@ class customExceptionLoginEM extends Exception{
 public function reroute($ID){
  header("Location:UNOEM.php");  
 		$path="C:\Users\khaledoon\Desktop\project_errors.log";
-error_log("[". date("d/m/y : h:i:s A")."]"."Error:Unauthorized access by employee number ".$ID." to an Employee page.
+error_log("[". date("d/m/y : h:i:s A")."]"."Error:Unauthorized access by employee nummber ".$ID." to an Employee page.
 ",3,$path);
 }        
 }
