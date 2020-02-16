@@ -73,17 +73,17 @@ include "Header.php";
         <div class="LeftDiv">
             <div id="pending" onclick="myFunction('TablesDiv')">
                 <span>
-                    Pending Letters
+                    Pending Letters Span 
                 </span>
             </div>
             <div id="denied" onclick="myFunction('DeniedDiv')">
                 <span>
-                    Denied Letters
+                    Denied Letters Span
                 </span>
             </div>
             <div id="approved" onclick="myFunction('ApprovedDiv')">
                 <span>
-                    Approved Letters
+                    Approved Letters Span diiiii
                 </span>
             </div>
         </div>
