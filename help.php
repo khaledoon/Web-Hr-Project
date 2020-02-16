@@ -95,7 +95,7 @@ include "Header.php";
 <!--placing all the contents of the page in the middle div-->
 
 <div id="poll">
-<h1 id="policyhead">Company's policy inside policy head div</h1>
+<h1 id="policyhead">Company's policy inside policy head div wa msa2 el of a7 ya shbab a7 a7</h1>
 <p id="policyparagrph">
 <!--	reading the data from the policy file and viewing it in the middle div of the policy page-->
 <?php
