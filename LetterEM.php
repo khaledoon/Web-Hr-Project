@@ -108,7 +108,7 @@ try{
                             Letter Requested by
                         </th>
                         <th>
-                            Letter Directed to
+                            Letter Directed to alice in wonderland m3 ayman van boreen
                         </th>
                          <th>
                            Action
@@ -188,14 +188,14 @@ try{
      // echo '<script> alert("Submit Success")</script>';
       //header("Location:LetterEM.php");
 
-    echo "<div class='alert alert-success animated fadeOut delay-1s'>
+    echo "<div class='alert alert-success animated fadeOut delay-2s'>
 																		  <strong>Created Successfully</strong>
 																		  </div>";
 
       }
       else
       {
-                                            echo"<div class='alert alert-danger animated fadeOut delay-1s'>
+                                            echo"<div class='alert alert-danger animated fadeOut delay-2s'>
                                             <strong>Error Creating</strong>
                                             </div>";
       }
@@ -211,11 +211,11 @@ try{
                                  $sql="delete from letters where SENDER_ID='".$_SESSION["ID"]."' AND LETTER_ID='".$_POST["letterid"]."';";
                                      $res = mysqli_query($conn,$sql);
                                      if($res){
-                                        echo "<div class='alert alert-success animated fadeOut delay-1s'>
+                                        echo "<div class='alert alert-success animated fadeOut delay-2s'>
                                               <strong>Delete Success</strong>
                                               </div>";
                                      }else{
-                                        echo"<div class='alert alert-danger animated fadeOut delay-1s'>
+                                        echo"<div class='alert alert-danger animated fadeOut delay-3s'>
                                             <strong>Error Deleting</strong>
                                             </div>";
                                      }
@@ -303,7 +303,7 @@ try{
       }
       else
       {
-                                            echo"<div class='alert alert-danger animated fadeOut delay-1s'>
+                                            echo"<div class='alert alert-danger animated fadeOut delay-3s'>
                                             <strong>Error Editing</strong>
                                             </div>";
       }
