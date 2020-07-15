@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>HR zeft Letter 3la dma3'ko</title>
+    <title>HR Letter</title>
     <link rel="stylesheet" id="theme" href="css/LetterADMIN.css">
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -141,7 +141,7 @@ include "Header.php";
 					
 					/*Displays all the pending letters submitted by the employees and where they are directed to along with the content that the employee chose to send.*/
 
-                $sql = "SELECT employees.*,letters.* FROM letters join employees on letters.SENDER_ID=employees.ID WHERE letters.Status = 'PENDING' Order by FIELD(Priority,'Urgent','High','Medium','Low')";
+                $sql = "SELECT employees.*,letters.* FROM letters join employees on letters.SENDER_ID=employees.ID WHERE letters.Status = 'PENDING'";
 
                 $res = mysqli_query($conn,$sql);
 
@@ -291,6 +291,9 @@ include "Header.php";
                         <th>
                             Letter Directed to
                         </th>
+                        <th>
+                            Status
+                        </th>
                             <th>
                             Letter Content
                         </th>
@@ -309,6 +312,7 @@ include "Header.php";
         echo "<tr>
                   <td>".$LetterReq."</td>
                   <td>".$Direct."</td>
+                  <td>".$status."</td>
 				  <td><button type='button' class='btn btn-info openModal' id='Approve_Letter'> View </button>
 
 				  <!-- Modal -->
@@ -343,6 +347,11 @@ include "Header.php";
 
                 </table>
             </div>
+<!--
+            <div class="buttons">
+                <button type="button" class="btn btn-primary" id="New_Letter">Create Letter Form</button>
+            </div>
+-->
         </div>
     </div>
 

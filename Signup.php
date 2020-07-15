@@ -17,18 +17,18 @@ throw new customExceptionFailedConnection();
 if(isset($_POST['Submit']))
 { 
 	/*this is the validations to make sure there is no sql injections or and no numbers in the first name or last name and that the username does use the allowed special characters*/
-    if(!filter_var($_POST['FirstName'], FILTER_VALIDATE_INT) === false||preg_match('/[\'\/~`\!@#\$%\^&\*\(\)\-\+=\{\}\[\]\|;:"\<\>,\.\?\\\]/', $_POST['FirstName'])|| preg_match_all('/\d+/', $_POST['FirstName'])||mb_strlen($_POST['FirstName'])<3) {
-                echo('<script>alert("Please Enter valid name with more than 3 characters in the FirstName field")</script>');
+    if(!filter_var($_POST['FirstName'], FILTER_VALIDATE_INT) === false||preg_match('/[\'\/~`\!@#\$%\^&\*\(\)\-\+=\{\}\[\]\|;:"\<\>,\.\?\\\]/', $_POST['FirstName'])|| preg_match_all('/\d+/', $_POST['FirstName'])) {
+                echo('<script>alert("Please Enter string in the FirstName")</script>');
     
-} else if(!filter_var($_POST['LastName'], FILTER_VALIDATE_INT) === false||preg_match('/[\'\/~`\!@#\$%\^&\*\(\)\-\+=\{\}\[\]\|;:"\<\>,\.\?\\\]/', $_POST['LastName'])|| preg_match_all('/\d+/', $_POST['LastName'])||mb_strlen($_POST['LastName'])<3) {
-                echo('<script>alert("Please Enter valid name with more than 3 characters in the LastName field")</script>');
+} else if(!filter_var($_POST['LastName'], FILTER_VALIDATE_INT) === false||preg_match('/[\'\/~`\!@#\$%\^&\*\(\)\-\+=\{\}\[\]\|;:"\<\>,\.\?\\\]/', $_POST['LastName'])|| preg_match_all('/\d+/', $_POST['LastName'])) {
+                echo('<script>alert("Please Enter string in the LastName")</script>');
     
 }
-  else  if(!filter_var($_POST['UserName'], FILTER_VALIDATE_INT) === false||preg_match('/[\'\/~`\!@#\$%\^&\*\(\)\-\+=\{\}\[\]\|;:"\<\>,\.\?\\\]/', $_POST['UserName'])||mb_strlen($_POST['UserName'])<3) {
-                echo('<script>alert("Please Enter username with more than 3 characters in the UserName field")</script>');
+  else  if(!filter_var($_POST['UserName'], FILTER_VALIDATE_INT) === false||preg_match('/[\'\/~`\!@#\$%\^&\*\(\)\-\+=\{\}\[\]\|;:"\<\>,\.\?\\\]/', $_POST['UserName'])) {
+                echo('<script>alert("Please Enter string in the UserName")</script>');
     
-  }else  if(preg_match('/;/', $_POST['Password'])||mb_strlen((string)$_POST['Password'])<3) {
-                echo('<script>alert("Please do not use the ; or enter a password with 3 or more characters in the Password field ")</script>');
+  }else  if(preg_match('/;/', $_POST['Password'])) {
+                echo('<script>alert("Please do not use the ; in the Password")</script>');
     
   }
 

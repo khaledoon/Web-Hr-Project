@@ -159,8 +159,6 @@ include_once"Exception_file.php";
 	 {
 		 $_POST['salary']=0;
 	 }
-	 if ($_POST['salary']>=0)
-	 {
 	 $net=0;
     $net = $_POST['salary'] + $_POST['bonus'] - 200;
     $sqlquery="INSERT INTO payroll (Employee_ID,Payroll_Amount,Bonus) VALUES ('".$_POST['EmpID']."','".$net."','".$_POST['bonus']."')";
@@ -179,12 +177,6 @@ include_once"Exception_file.php";
                                             <strong>Error Assigning</strong>
                                             </div>";
 								}
-							}
-							else{
-								echo"<div class='alert alert-danger animated fadeOut delay-1s'>
-                                            <strong>cant enter value less than 0 </strong>
-                                            </div>";
-							}
     }
 			/*Deletes the selected account from the employees table. But before that it searches for requests in the request table whether he has an edit request or not, then subsequently deletes every entry in the database that has the employee's ID.*/
 			
@@ -305,6 +297,8 @@ include_once"Exception_file.php";
                             $GLOBALS['RequestID']=$row['RequestID'];
 
 						}
+
+//						echo "</table>";
 						} else { echo "<tr><td colspan=4>No registers found</td>";}
 
 				?>

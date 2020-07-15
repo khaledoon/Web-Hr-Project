@@ -108,7 +108,7 @@ try{
                             Letter Requested by
                         </th>
                         <th>
-                            Letter Directed to alice in wonderland m3 ayman van boreen
+                            Letter Directed to
                         </th>
                          <th>
                            Action
@@ -169,18 +169,6 @@ try{
 					}
 
 //insert into letters with type pending the data coming from form in the reqletter page
-		if($_SESSION['mobile']=='')
-		{echo"<div class='alert alert-danger animated fadeOut delay-2s'>
-                                            <strong>Fill your data first in employee files tab or await approval on edit from HR Manager</strong>
-                                            </div>";}
-		else if ($_SESSION['natID']==''){echo"<div class='alert alert-danger animated fadeOut delay-2s'>
-                                            <strong>Fill your data first in employee files tab or await approval on edit from HR</strong>
-                                            </div>";}
-		else if ($_SESSION['marStat']=='')
-		{echo"<div class='alert alert-danger animated fadeOut delay-2s'>
-                                            <strong>Fill your data first in employee files tab or await approval on edit from HR</strong>
-                                            </div>";}
-		else{
       $sql="INSERT INTO letters (SENDER_ID,DirectedTo,Priority,Status,MobileFlag,PassportFlag,MartialFlag,HireFlag,SalaryFlag,COMMENTS) VALUES ('".$_SESSION["ID"]."','".$_POST["Select_Directed_to"]."','".$_POST['Select_Priority']."','PENDING','$mobilex','$Passportx','$Martialx','$Hirex','$Salaryx','".$_POST["comment"]."')";
       $result = mysqli_query($conn,$sql);
       if($result)
@@ -188,19 +176,19 @@ try{
      // echo '<script> alert("Submit Success")</script>';
       //header("Location:LetterEM.php");
 
-    echo "<div class='alert alert-success animated fadeOut delay-2s'>
+    echo "<div class='alert alert-success animated fadeOut delay-1s'>
 																		  <strong>Created Successfully</strong>
 																		  </div>";
 
       }
       else
       {
-                                            echo"<div class='alert alert-danger animated fadeOut delay-2s'>
+                                            echo"<div class='alert alert-danger animated fadeOut delay-1s'>
                                             <strong>Error Creating</strong>
                                             </div>";
       }
    }
-	}
+
    }
 
                    //the employee can delete his requested lettter
@@ -211,11 +199,11 @@ try{
                                  $sql="delete from letters where SENDER_ID='".$_SESSION["ID"]."' AND LETTER_ID='".$_POST["letterid"]."';";
                                      $res = mysqli_query($conn,$sql);
                                      if($res){
-                                        echo "<div class='alert alert-success animated fadeOut delay-2s'>
+                                        echo "<div class='alert alert-success animated fadeOut delay-1s'>
                                               <strong>Delete Success</strong>
                                               </div>";
                                      }else{
-                                        echo"<div class='alert alert-danger animated fadeOut delay-3s'>
+                                        echo"<div class='alert alert-danger animated fadeOut delay-1s'>
                                             <strong>Error Deleting</strong>
                                             </div>";
                                      }
@@ -248,7 +236,6 @@ try{
 						 SET DirectedTo='".$_POST['Select_Directed_to']."'
 						 WHERE SENDER_ID='".$_SESSION['ID']."' AND LETTER_ID='".$_POST['letterid']."' ;";
 						 $res1 = mysqli_query($conn,$sql4);
-							    
 
 						}
                     
@@ -291,22 +278,6 @@ try{
 						 SET MobileFlag='".$mobilex."',PassportFlag='".$Passportx."',MartialFlag='".$Martialx."',HireFlag='".$Hirex."',SalaryFlag='".$Salaryx."', COMMENTS='".$_POST['comment']."'
 						 WHERE SENDER_ID='".$_SESSION['ID']."' AND LETTER_ID='".$_POST['letterid']."' ;";
 						 $res1 = mysqli_query($conn,$sql4);
-							       if($res1)
-      {
-     // echo '<script> alert("Submit Success")</script>';
-      //header("Location:LetterEM.php");
-
-    echo "<div class='alert alert-success animated fadeOut delay-1s'>
-																		  <strong>Edit Successfully</strong>
-																		  </div>";
-
-      }
-      else
-      {
-                                            echo"<div class='alert alert-danger animated fadeOut delay-3s'>
-                                            <strong>Error Editing</strong>
-                                            </div>";
-      }
 
 
 					}
@@ -315,7 +286,7 @@ try{
 
                          
                     $asdh = $_SESSION['ID'];
-                    $sql = "SELECT employees.*,letters.* FROM letters join employees on letters.SENDER_ID=employees.ID WHERE letters.SENDER_ID=".$_SESSION['ID']." AND letters.Status = 'PENDING' Order by FIELD(Priority,'Urgent','High','Medium','Low') ";
+                    $sql = "SELECT employees.*,letters.* FROM letters join employees on letters.SENDER_ID=employees.ID WHERE letters.SENDER_ID=".$_SESSION['ID']." AND letters.Status = 'PENDING' ";
                     $result = mysqli_query($conn,$sql);
 
 
@@ -381,7 +352,7 @@ try{
           							<input type='checkbox' id='check-style' name='check_list[]' value='Martial' ".(($row['MartialFlag'] == 'true')?'checked':' ')."> Martial Status<br>
           							<input type='checkbox' id='check-style' name='check_list[]' value='Hire' ".(($row['HireFlag'] == 'true')?'checked':' ')."> Hire Date<br>
 									<input type='checkbox' id='check-style' name='check_list[]' value='Salary' ".(($row['SalaryFlag'] == 'true')?'checked':' ')."> Salary<br><br>
-									 Comment: <br><textarea style='all:unset;white-space:prewrap;text-align:left;border-width:1px;border-style:solid;border-color:black;' name='comment' rows='10' cols='50'>".$row["COMMENTS"]."</textarea><br><br>
+									 Comment: <textarea style='all:unset;white-space:prewrap;text-align:left;border-width:1px;border-style:solid;border-color:black;' name='comment' rows='10' cols='50'>".$row["COMMENTS"]."</textarea><br><br>
 
 										<input type='hidden' name='letterid' value='".$row['LETTER_ID']."'>
 

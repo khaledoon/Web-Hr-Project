@@ -112,20 +112,9 @@ include "Header.php";
 <h1 id="policyhead">Company's policy</h1>
 <p id="policyparagrph">
 <?php
-if(!file_exists('C:\xampp\htdocs\Policy.txt'))
-{
-	echo "<br><br>no policy yet";
-}
-else{
-	if ( 0 != filesize('C:\xampp\htdocs\Policy.txt') )
-	{
-	$myfile = fopen("Policy.txt", "r");
+$myfile = fopen("Policy.txt", "r") or die("Unable to open file!");
 echo fread($myfile,filesize("Policy.txt"));
-fclose($myfile);}
-	else{
-		echo "<br><br>No policy yet";
-	}
-}
+fclose($myfile);
 ?>
 </div>
 
@@ -175,7 +164,7 @@ if ($result->num_rows > 0) {
             <!-- Modal content -->
             <div id="MC" class='modal-content'>
             <span class='close'>&times;</span>
-            <h4 style='float:center;'>FAQ</h4>
+            <h4 style='float:center;'>Employee Info</h4>
             <form class='form-content' method='post' action='' enctype='multipart/form-data'>
             <div class='first-coloumn'>
             <?php

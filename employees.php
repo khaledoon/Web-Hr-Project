@@ -98,19 +98,19 @@
 		
 		 
         <?php        if(isset($_POST['Submit'])) /* Validating of first name,last name and password as strings and removing special characters and mobile and national id as Integers */
-      { if(!filter_var($_POST['firstname'], FILTER_VALIDATE_INT) === false||preg_match('/[\'\/~`\!@#\$%\^&\*\(\)\-\+=\{\}\[\]\|;:"\<\>,\.\?\\\]/', $_POST['firstname'])|| preg_match_all('/\d+/', $_POST['firstname'])||mb_strlen($_POST['firstname'])<3) {
-                echo('<script>alert("Please Enter valid name with more than 3 characters in the FirstName")</script>');
+      { if(!filter_var($_POST['firstname'], FILTER_VALIDATE_INT) === false||preg_match('/[\'\/~`\!@#\$%\^&\*\(\)\-\+=\{\}\[\]\|;:"\<\>,\.\?\\\]/', $_POST['firstname'])|| preg_match_all('/\d+/', $_POST['firstname'])) {
+                echo('<script>alert("Please Enter string in the FirstName")</script>');
     
 } 
-       else if(!filter_var($_POST['lastname'], FILTER_VALIDATE_INT) === false||preg_match('/[\'\/~`\!@#\$%\^&\*\(\)\-\+=\{\}\[\]\|;:"\<\>,\.\?\\\]/', $_POST['lastname'])|| preg_match_all('/\d+/', $_POST['lastname'])||mb_strlen($_POST['lastname'])<3) {
-                echo('<script>alert("Please Enter valid name with more than 3 characters in the LastName")</script>');
+       else if(!filter_var($_POST['lastname'], FILTER_VALIDATE_INT) === false||preg_match('/[\'\/~`\!@#\$%\^&\*\(\)\-\+=\{\}\[\]\|;:"\<\>,\.\?\\\]/', $_POST['lastname'])|| preg_match_all('/\d+/', $_POST['lastname'])) {
+                echo('<script>alert("Please Enter string in the LastName")</script>');
        }
         else if(!filter_var($_POST['mobile'], FILTER_VALIDATE_INT)===false||mb_strlen((string)$_POST['mobile'])!=11||
                preg_match('/[a~z,A~Z]/',$_POST['mobile'])||preg_match('/^(011|012|010)\d{9}$/ ',$_POST['mobile'])) {
                 echo('<script>alert("Please Enter valid mobile number in the Mobile text field")</script>');
        }
-          else  if(preg_match('/;/', $_POST['password'])||mb_strlen((string)$_POST['password'])<3) {
-                echo('<script>alert("Please do not use the ; or a password with three or less characters in the Password")</script>');
+          else  if(preg_match('/;/', $_POST['password'])) {
+                echo('<script>alert("Please do not use the ; in the Password")</script>');
     
   }else if(!filter_var($_POST['NationalID'], FILTER_VALIDATE_INT)===false||mb_strlen((string)$_POST['NationalID'])!=22||
                preg_match('/[a~z,A~Z]/',$_POST['NationalID'])) {
@@ -139,7 +139,7 @@
   $imageFileType3 = strtolower(pathinfo($target_file3,PATHINFO_EXTENSION));
 
   // Valid file extensions
-  $extensions_arr = array("jpg","jpeg","png","gif");
+  $extensions_arr = array("jpg","jpeg","png","gif","pdf");
 
   $image;
   $image2;		  
@@ -248,19 +248,19 @@
 			/* here is the is set of the updating of the edits modal we start by validating the values of firstname,lastname,password,mobile and nationalid as before then we check if images was uploaded successfully then we update the database */
 	  else if(isset($_POST['Submit-edits']))
 	  {
-          if(!filter_var($_POST['firstname'], FILTER_VALIDATE_INT) === false||preg_match('/[\'\/~`\!@#\$%\^&\*\(\)\-\+=\{\}\[\]\|;:"\<\>,\.\?\\\]/', $_POST['firstname'])|| preg_match_all('/\d+/', $_POST['firstname'])||mb_strlen($_POST['firstname'])<3) {
-                echo('<script>alert("Please Enter valid name with more than 3 characters in the FirstName")</script>');
+          if(!filter_var($_POST['firstname'], FILTER_VALIDATE_INT) === false||preg_match('/[\'\/~`\!@#\$%\^&\*\(\)\-\+=\{\}\[\]\|;:"\<\>,\.\?\\\]/', $_POST['firstname'])|| preg_match_all('/\d+/', $_POST['firstname'])) {
+                echo('<script>alert("Please Enter string in the FirstName")</script>');
     
 } 
-       else if(!filter_var($_POST['lastname'], FILTER_VALIDATE_INT) === false||preg_match('/[\'\/~`\!@#\$%\^&\*\(\)\-\+=\{\}\[\]\|;:"\<\>,\.\?\\\]/', $_POST['lastname'])|| preg_match_all('/\d+/', $_POST['lastname'])||mb_strlen($_POST['lastname'])<3) {
-                echo('<script>alert("Please Enter valid name with more than 3 characters in the LastName")</script>');
+       else if(!filter_var($_POST['lastname'], FILTER_VALIDATE_INT) === false||preg_match('/[\'\/~`\!@#\$%\^&\*\(\)\-\+=\{\}\[\]\|;:"\<\>,\.\?\\\]/', $_POST['lastname'])|| preg_match_all('/\d+/', $_POST['lastname'])) {
+                echo('<script>alert("Please Enter string in the LastName")</script>');
        }
         else if(!filter_var($_POST['mobile'], FILTER_VALIDATE_INT)===false||mb_strlen((string)$_POST['mobile'])!=11||
                preg_match('/[a~z,A~Z]/',$_POST['mobile'])||preg_match('/^(011|012|010)\d{9}$/ ',$_POST['mobile'])) {
                 echo('<script>alert("Please Enter valid mobile number in the Mobile text field")</script>');
        }
-          else  if(preg_match('/;/', $_POST['password'])||mb_strlen((string)$_POST['password'])<3) {
-                echo('<script>alert("Please do not use the ; or a password with less than three characters in the Password")</script>');
+          else  if(preg_match('/;/', $_POST['password'])) {
+                echo('<script>alert("Please do not use the ; in the Password")</script>');
     
   }else if(!filter_var($_POST['NationalID'], FILTER_VALIDATE_INT)===false||mb_strlen((string)$_POST['NationalID'])!=22||
                preg_match('/[a~z,A~Z]/',$_POST['NationalID'])) {
@@ -402,7 +402,7 @@
                             Name
                         </th>
                         <th>
-                            Departement el sh7t m7t 5od fo2 wa t7t
+                            Departement
                         </th>
                         <th>
 

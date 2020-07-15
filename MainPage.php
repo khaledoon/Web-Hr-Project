@@ -153,13 +153,6 @@ onclick="document.write('<//?php session_unset();
 						<label id="Mob">Mobile Number:<?php echo  " 0".$_SESSION["mobile"] ?></label><br>
 						<label id="Marital">Marital Status:<?php echo  " ".$_SESSION["marStat"] ?></label><br>
 						<label id="NationalID">National ID Number:<?php echo  " ".$_SESSION["natID"] ?></label><br>
-						<?php
-							if($_SESSION['profimg']=='')
-							{}
-							else{
-								echo "<img src='".$_SESSION['profimg']."' style='position:absolute;margin-left:30%;margin-top:-15%;' height='150' width='150'>";
-							}
-						?>
 					</form>
 				</section>
 

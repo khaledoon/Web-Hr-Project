@@ -73,17 +73,17 @@ include "Header.php";
         <div class="LeftDiv">
             <div id="pending" onclick="myFunction('TablesDiv')">
                 <span>
-                    Pending Letters Span 
+                    Pending Letters
                 </span>
             </div>
             <div id="denied" onclick="myFunction('DeniedDiv')">
                 <span>
-                    Denied Letters Span
+                    Denied Letters
                 </span>
             </div>
             <div id="approved" onclick="myFunction('ApprovedDiv')">
                 <span>
-                    Approved Letters Span diiiii
+                    Approved Letters
                 </span>
             </div>
         </div>
@@ -152,7 +152,7 @@ include "Header.php";
 					
 					
                 //getting pending letters from letters table setting letters according to their sender
-                $sql = "SELECT employees.*,letters.* FROM letters join employees on letters.SENDER_ID=employees.ID WHERE letters.Status = 'PENDING' Order by FIELD(Priority,'Urgent','High','Medium','Low')";
+                $sql = "SELECT employees.*,letters.* FROM letters join employees on letters.SENDER_ID=employees.ID WHERE letters.Status = 'PENDING'";
                 
                 $res = mysqli_query($conn,$sql);
                 
@@ -200,8 +200,7 @@ include "Header.php";
 									<input type='checkbox' id='check-style' name='check_list[]' value='Salary' onclick='return false;' ".(($row['SalaryFlag'] == 'true')?'checked':' ')."> Salary<br><br>
 									 Comment:<br><textarea style='all:unset;white-space:prewrap;text-align:left;border-width:1px;border-style:solid;border-color:black;' name='comment' rows='3' cols='50'readonly>".$row["COMMENTS"]."</textarea><br><br>
 									 Admin Comment: <textarea style='all:unset;white-space:pre-wrap;text-align:left;border-width:1px;border-style:solid;border-color:black;' name='admincomm' rows='3' cols='50'readonly>".$row["AdminComment"]."</textarea><br><br>
-									    
-										
+									
 										<input type='hidden' name='letterid' value='".$row['LETTER_ID']."'>
 										<input type='hidden' name='job' value='".$row['JOB']."'>
 										<input type='hidden' name='firstname' value='".$row['FirstName']."'>

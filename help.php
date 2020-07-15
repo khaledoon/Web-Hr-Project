@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Hr System test</title>
+<title>Hr System</title>
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" id="theme"  href="help.css">
 <link  src="js/jquery-2.1.4.min.js">
@@ -16,8 +16,7 @@
 <script>
 function myFunction(y) {
 	/* array made to switch between tiles displays as policy in the beginning of the page then switch as needed */
-var idarr=["FAQQ","adi adi adiadiadiadiad","za3'rat lel kemya ya beh","DWSDWS","DDFDF","TEST22","TEST33"]
-
+var idarr=["poll","FAQQ"]
 
 
 
@@ -96,25 +95,13 @@ include "Header.php";
 <!--placing all the contents of the page in the middle div-->
 
 <div id="poll">
-<h1 id="policyhead">Company's policy inside policy head div wa msa2 el of a7 ya shbab a7 a7</h1>
+<h1 id="policyhead">Company's policy</h1>
 <p id="policyparagrph">
 <!--	reading the data from the policy file and viewing it in the middle div of the policy page-->
 <?php
-//$myfile = fopen("Policy.txt", "r");
-if(!file_exists('C:\xampp\htdocs\Policy.txt'))
-{
-	echo "<br><br>no policy yet";
-}
-else{
-	if ( 0 != filesize('C:\xampp\htdocs\Policy.txt') )
-	{
-	$myfile = fopen("Policy.txt", "r");
+$myfile = fopen("Policy.txt", "r") or die("Unable to open file!");
 echo fread($myfile,filesize("Policy.txt"));
-fclose($myfile);}
-	else{
-		echo "<br><br>No policy yet";
-	}
-}
+fclose($myfile);
 ?>
 </div>
 

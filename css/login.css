@@ -7,12 +7,11 @@ body{
 .wrapper {
     width:100%;
     height:99%;
-    background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #FF3706);  /*setting the background to be linear with 45  degree angle*/
-    background-size: 600% 100%; /*//strech the background*/
+    background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #FF3706); /*setting el background 3ashan tb2a linear*/
+    background-size: 600% 100%; /*//strech l el background*/
 
-
-    animation: gradient 8s linear infinite;  /* the animation called gradient works for 8 seconds in an infinite loop*/
-    animation-direction: alternate; /* direction of the movement is set as alternate so that when it reaches the end it would turn back*/
+    animation: gradient 8s linear infinite; /* el animation el esamaha gradient btshta8al for 8 seconds f infinite loop*/
+    animation-direction: alternate; /* direction bta3 el movement 3mlto alternate 3ashan lama twsl l el a5er trg3 tani like a U-turn msh gif*/
 }
 @keyframes gradient { /*   */
     0% {background-position: 0%}
@@ -64,6 +63,7 @@ body{
   outline: none;
   color: white;
   border-radius: 30px;
+  transition: 0.25s;
   cursor: pointer;
 }
 .box input[type = "submit"]:hover{

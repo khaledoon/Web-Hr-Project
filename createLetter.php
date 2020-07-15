@@ -1,7 +1,7 @@
 <html>
 
 <head>
-<title>Request Letter testing</title>
+<title>Request Letter</title>
 <link rel="stylesheet" id="theme" href="css/reqLetter.css">
 <script src="js/jquery-2.1.4.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -12,10 +12,6 @@
 </head>
 
 <body>
-	
-
-	
-	
 <?php
 	include_once ("dbconnection.php");
 include_once"Exception_file.php";
@@ -41,11 +37,6 @@ try{if($_SESSION["job"]==null){
 		
 		$e->reroute($_SESSION['ID']);
 		
-	}
-	
-	if($_POST['letterid']===NULL)
-	{
-		header("Location:HRLetter.php");
 	}
 
 include "Header.php";
@@ -118,7 +109,7 @@ we want to notify you about <?php echo  ''.$_POST['firstname'].' '.$_POST['lastn
 
 Human Resources,			
 <?php echo  ''.$_SESSION['name'].' ' .$_SESSION['lastname'].'';  ?>                                               
-<?php																								 if($mobilex =="true") echo "			                                                                                      Mobile Number : 0".$_POST['mobile']."\n			                                                                                      ";
+<?php																								 if($mobilex =="true") echo "			                                                                                      Mobile Number : ".$_POST['mobile']."\n			                                                                                      ";
 																										if($Martialx=="true") echo "Marital Status: ".$_POST['marital']."\n			                                                                                      ";
 																										if($Hirex=="true")    echo "Hire Date     : ".$_POST['hiredate']."\n			                                                                                      ";
 																										if($Salaryx=="true")   echo "Salary        : ".$_POST['salary']."\n"; ?>
@@ -145,7 +136,7 @@ we want to notify you about <?php echo  ''.$_POST['firstname'].' '.$_POST['lastn
 
 Human Resources,			
 <?php echo  ''.$_SESSION['name'].' ' .$_SESSION['lastname'].'';  ?>                                               
-<?php																								 if($mobilex =="true") echo "			                                                                                      Mobile Number : 0".$_POST['mobile']."\n			                                                                                      ";
+<?php																								 if($mobilex =="true") echo "			                                                                                      Mobile Number : ".$_POST['mobile']."\n			                                                                                      ";
 																										if($Martialx=="true") echo "Marital Status: ".$_POST['marital']."\n			                                                                                      ";
 																										if($Hirex=="true")    echo "Hire Date     : ".$_POST['hiredate']."\n			                                                                                      ";
 																										if($Salaryx=="true")   echo "Salary        : ".$_POST['salary']."\n"; ?>
@@ -172,7 +163,7 @@ we want to notify you about <?php echo  ''.$_POST['firstname'].' '.$_POST['lastn
 
 Human Resources,			
 <?php echo  ''.$_SESSION['name'].' ' .$_SESSION['lastname'].'';  ?>                                               
-<?php																								 if($mobilex =="true") echo "			                                                                                      Mobile Number : 0".$_POST['mobile']."\n			                                                                                      ";
+<?php																								 if($mobilex =="true") echo "			                                                                                      Mobile Number : ".$_POST['mobile']."\n			                                                                                      ";
 																										if($Martialx=="true") echo "Marital Status: ".$_POST['marital']."\n			                                                                                      ";
 																										if($Hirex=="true")    echo "Hire Date     : ".$_POST['hiredate']."\n			                                                                                      ";
 																										if($Salaryx=="true")   echo "Salary        : ".$_POST['salary']."\n"; ?>
@@ -198,7 +189,7 @@ we want to notify you about <?php echo  ''.$_POST['firstname'].' '.$_POST['lastn
 
 Human Resources,			
 <?php echo  ''.$_SESSION['name'].' ' .$_SESSION['lastname'].'';  ?>                                               
- <?php																								 if($mobilex =="true") echo "			                                                                                      Mobile Number : 0".$_POST['mobile']."\n			                                                                                      ";
+ <?php																								 if($mobilex =="true") echo "			                                                                                      Mobile Number : ".$_POST['mobile']."\n			                                                                                      ";
 																										if($Martialx=="true") echo "Marital Status: ".$_POST['marital']."\n			                                                                                      ";
 																										if($Hirex=="true")    echo "Hire Date     : ".$_POST['hiredate']."\n			                                                                                      ";
 																										if($Salaryx=="true")   echo "Salary        : ".$_POST['salary']."\n"; ?>

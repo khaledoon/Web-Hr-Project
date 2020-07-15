@@ -165,10 +165,7 @@
 	  if($_POST['salary']==NULL)
 	 {
 		 $_POST['salary']=0;
-     }
-     if ($_POST['salary']>=0){
-
-     
+	 }
 	 $net=0;
     $net = $_POST['salary'] + $_POST['bonus'] - 200;
     $sqlquery="INSERT INTO payroll (Employee_ID,Payroll_Amount,Bonus) VALUES ('".$_POST['EmpID']."','".$net."','".$_POST['bonus']."')";
@@ -186,13 +183,7 @@
 									 echo"<div class='alert alert-danger animated fadeOut delay-1s'>
                                             <strong>Error Assigning</strong>
                                             </div>";
-                                }
-                            }
-                            else{
-                                echo"<div class='alert alert-danger animated fadeOut delay-1s'>
-                                <strong>cant put value less than 0</strong>
-                                </div>";
-                            }
+								}
     }
       ?>
 

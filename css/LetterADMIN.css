@@ -57,19 +57,9 @@
 }
 
 #ApprovedDiv,#DeniedDiv{
-    display:none;
-    padding-left: 10px;
-    padding-right: 10px;
-    position: absolute;
-    width:97%;
+	display:none;
 }
-#TablesDiv{
-    padding-left: 10px;
-    padding-right: 10px;
-    position: absolute;
-    width:97%;
-    
-}
+
 #pending{
 background: url('../images/pending_3.png') no-repeat;
   background-position: center;
